@@ -3,7 +3,7 @@ package com.munis.generics;
 /**
  * Created by MN883H on 1/8/2018.
  */
-public class SortedPair<T extends Comparable> {
+public class SortedPair<T extends Comparable<T>> {
     private final T first;
     private final T second;
 
