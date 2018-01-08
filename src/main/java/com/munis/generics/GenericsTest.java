@@ -48,6 +48,11 @@ public class GenericsTest {
 
         Collections.sort(list,new ReverseComparator<>(new AgeComparator()));
         System.out.println(list);
+
+        SortedPair<Integer> pair = new SortedPair<>(2,1);
+        System.out.println("Sorted Pair");
+        System.out.println(pair.getFirst().intValue());
+        System.out.println(pair.getSecond().intValue());
     }
 
 }
