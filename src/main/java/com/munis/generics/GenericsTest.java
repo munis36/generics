@@ -45,7 +45,8 @@ public class GenericsTest {
 //        Collections.sort(list,nameComparator);
 //        System.out.println(list);
 
-        Collections.sort(list,new AgeComparator());
+//        Collections.sort(list,new AgeComparator());
+        list.sort(new AgeComparator());
         System.out.println(list);
 
         Collections.sort(list,new ReverseComparator<>(new AgeComparator()));
