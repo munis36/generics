@@ -18,5 +18,7 @@ public class Main {
 
         Predicate<String> YES = Predicate.isEqualsTo("Yes");
         System.out.println(" YES equals to " + YES.test("Yes"));
+
+        System.out.println("cool");
     }
 }
