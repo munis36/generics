@@ -15,5 +15,8 @@ public class Main {
         Predicate<String> strBetween5And20 = stringGreaterThan5.and(stringLessThan20);
 
         System.out.println("Check and operation " + strBetween5And20.test("Muniyasamy Nagarathinam"));
+
+        Predicate<String> YES = Predicate.isEqualsTo("Yes");
+        System.out.println(" YES equals to " + YES.test("Yes"));
     }
 }
