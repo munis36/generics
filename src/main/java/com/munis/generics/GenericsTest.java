@@ -2,10 +2,7 @@ package com.munis.generics;
 
 import sun.awt.datatransfer.DataTransferer;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by MN883H on 1/8/2018.
@@ -79,9 +76,20 @@ public class GenericsTest {
         System.out.println("Smallest number");
         System.out.println(min(numbers,Integer::compare));
 
+        String[] strArr1 = {"One","Two","Three"};
+        String[] strArr2 = {"Hello", "World"};
+
+//        System.out.println("MinTest Generic method "+minTest(strArr1,new String()));
+
     }
 
-    public static <T>  T min(List<T> values, Comparator<T> comparator){
+/*
+   private static <T, U> U minTest(T arr1, String arr2){
+        T otherElement = arr2;
+        return otherElement;
+    }
+*/
+    private static <T> T min(List<T> values, Comparator<T> comparator){
         if (values.isEmpty()){
             throw new IllegalArgumentException("List is empty, cannot find minimum");
         }

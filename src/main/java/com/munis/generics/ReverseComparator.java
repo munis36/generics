@@ -13,14 +13,6 @@ public class ReverseComparator<T> implements Comparator<T> {
         this.delegateComparator = delegateComparator;
     }
 
-    public Comparator getDelegateComparator() {
-        return delegateComparator;
-    }
-
-    public void setDelegateComparator(Comparator delegateComparator) {
-        this.delegateComparator = delegateComparator;
-    }
-
     @Override
     public int compare(T o1, T o2) {
         return -1 * delegateComparator.compare(o1,o2);
